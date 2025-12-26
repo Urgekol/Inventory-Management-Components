@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(104, 103, 103);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    padding: 15px 20px;
+    margin: 40px auto;
+    border-radius: 12px;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow_toggle i {
+    transition: transform 0.3s ease;
+}
+
+.arrow_toggle.rotate i {
+    transform: rotate(180deg);
+}
+
+.face2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: max-height 0.3s ease;
+}
+
+.face2.active {
+    margin-top: 30px;
+    max-height: 500px; 
+    opacity: 1;
+    visibility: visible;
+}
+.option {
+    display: flex;
+    align-items: center;
+    gap: 8px;  
+}
+
+.option input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.option label {
+    cursor: pointer;
+}

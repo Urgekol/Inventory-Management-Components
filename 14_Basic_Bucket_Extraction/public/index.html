@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Add Guitar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a2e0c6ad4f.js" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="heading">Add New Guitar</div>
+
+      <!-- Upload Section -->
+      <div class="upload-container">
+        <div class="upload-box" id="uploadBox">
+          <h3>Upload Product Images</h3>
+          <p>Drag and drop images here, or click to browse</p>
+
+          <input type="file" id="fileInput" multiple hidden>
+          <label for="fileInput" class="upload-btn">Upload Images</label>
+
+          <div id="preview"></div>
+        </div>
+
+        <button class="add-guitar-btn" id="addGuitarBtn">Add Guitar</button>
+      </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+    
+  </body>
+</html>

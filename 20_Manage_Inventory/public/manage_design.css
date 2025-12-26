@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6f9;
+}
+
+.container {
+  width: 95%;
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.search-section input {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-btn {
+  background: #1a73e8;
+  border: none;
+  padding: 12px 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.inventory-table {
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.inventory-table th {
+  text-align: left;
+  padding: 14px;
+  background: #e8eef5;
+}
+
+.inventory-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.guitar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.color-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Manage Inventory</title>
+        <link rel="stylesheet" href="manage_design.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h2>Manage Inventory</h2>
+
+            <div class="search-section">
+                <input id="searchInput" type="text" placeholder="Search by the name of the guitar...">
+                <button class="add-btn">Add New Guitar</button>
+            </div>
+
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Colors</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="guitarTableBody"></tbody>
+            </table>
+        </div>
+
+        <script src="manage.js"></script>
+
+    </body>
+</html>

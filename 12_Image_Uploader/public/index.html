@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Guitar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="heading">Add New Guitar</div>
+
+      <div class="upload-container">
+        <div class="upload-box" id="uploadBox">
+          <h3>Upload Product Images</h3>
+          <p>Drag and drop images here, or click to browse</p>
+
+          <input type="file" id="fileInput" multiple hidden>
+          <label for="fileInput" class="upload-btn">Upload Images</label>
+
+          <div id="preview"></div>
+        </div>
+
+        <div id="result" class="color-container"></div>
+
+        <button class="add-guitar-btn" id="addGuitarBtn">Add Guitar</button>
+      </div>
+
+      <!-- Color Picker Overlay -->
+      <div class="color-picker-overlay" id="colorPickerOverlay" style="display:none;">
+        <div class="color-picker" id="colorPicker">
+          <h2>Color Picker</h2>
+
+          <div class="section">
+            <label for="redRange">Red</label>
+            <input type="range" id="redRange" min="0" max="255" value="128">
+            <span id="redVal">128</span>
+          </div>
+
+          <div class="section">
+            <label for="greenRange">Green</label>
+            <input type="range" id="greenRange" min="0" max="255" value="128">
+            <span id="greenVal">128</span>
+          </div>
+
+          <div class="section">
+            <label for="blueRange">Blue</label>
+            <input type="range" id="blueRange" min="0" max="255" value="128">
+            <span id="blueVal">128</span>
+          </div>
+
+          <div class="preview-container">
+            <div class="preview" id="colorPreview"></div>
+            <input type="text" id="hexCode" placeholder="#808080" value="#808080">
+          </div>
+
+          <p id="rgbText">RGB(128, 128, 128)</p>
+
+          <div class="footer">
+            <button id="cancelBtn">Cancel</button>
+            <button id="getColorBtn">Get Color</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+
+  </body>
+</html>

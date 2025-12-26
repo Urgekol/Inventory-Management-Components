@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(230, 228, 228);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    translate: 777px 0%;
+    display: flex;
+    width: 57.22%;          /* for the demonstration of the guitars */
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #F7F4EA;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 350px;               
+    height: 540px;            
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image_container {
+    padding-top: 65px;
+    padding-bottom: 55px;
+    scale: 1.5;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 350px;               
+    height: 280px;             
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;           
+}
+
+.image img {
+    width: 350px;              
+    height: 280px;
+    object-fit: cover;         
+    transform: scale(1.3);      
+}
+
+.banner {
+    width: 100%;
+    background-color: #A8BBA3;
+    color: black;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.Color_heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: #9a9b9b solid 2px;
+}
+
+#g1 {
+    background-color: #281511;
+}
+
+#g1{
+    background-color: #281511;
+}
+
+#g2{
+    background-color: #CBA96A;
+}
+
+#g3{
+    background-color: #281511;
+}
+
+#g4_c1{
+    background-color: #882700;
+}
+
+#g4_c2{
+    background-color: #181818;
+}
+
+#g4_c3{
+    background-color: #013238;
+}
+
+#g4_c4{
+    background-color: #DDB781;
+}
+
+.wrapper {
+    margin-top: 10px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d5db; /* light gray border */
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.quantity span {
+    width: 20px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 0;
+}
+
+.quantity .num {
+    width: 50px;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+
+.price {
+    display: flex;
+    gap: 10px;
+    padding: 15px;font-family: "Inter", sans-serif;
+    font-weight: 600; 
+    font-size: 15px; 
+    letter-spacing: 0.5px;
+}
+
+.bottom{
+    position: relative;
+    background-color: #F7F4EA;
+    height: 100%;
+}
+
+.cart {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    background-color: white;
+    outline: rgb(196, 194, 194) solid 2px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cart:hover {
+    transform: scale(1.1);
+    outline: rgb(196, 194, 194) solid 3px;;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.details span {
+    font-weight: bold;
+    font-size: 16px;
+}

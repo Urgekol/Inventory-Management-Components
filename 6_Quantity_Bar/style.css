@@ -1,0 +1,46 @@
+/* Import Open Sans Light 300 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f6fb;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db; /* light gray border */
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.quantity span {
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  padding: 6px 0;
+}
+
+.quantity .num {
+  width: 50px;
+  font-weight: 400;
+  pointer-events: none;
+}
